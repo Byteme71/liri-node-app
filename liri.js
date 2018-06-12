@@ -5,7 +5,7 @@ var Twitter = require("twitter");
 
 var keys = require("./keys.js");
 
-var input = process.argv[2];
+// var input = process.argv[2];
 
 // var secondInput = ""
 // for (var i = 3; i < process.argv.length; i++) {
@@ -198,6 +198,7 @@ function start() {
             name: "questionOne",
             message: "Hi this is Liri, What would you like to do?",
             choices: ["Spotify", "Twitter", "Movies", "Random"]
+
         }
     ]).then(function (response) {
         console.log(response.questionOne)
